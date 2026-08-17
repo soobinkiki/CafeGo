@@ -1,4 +1,6 @@
-const ROOT = "http://localhost:5091";
+const ROOT =
+  import.meta.env.VITE_API_URL ||
+  "http://localhost:5091";
 
 
 async function get(path, signal) {
